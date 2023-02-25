@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on jeu. 21 juil. 2022 15:36:34 by Eclipse SUMO netedit Version 1.4.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <output>
+        <output-file value="/home/lil/PycharmProjects/DQN-ITSCwPD/env/custom_env/data/platoon/platoon_simplified.net.xml"/>
+    </output>
+
+    <processing>
+        <offset.disable-normalization value="true"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+    </junctions>
+
+    <netedit>
+        <additional-files value="/home/lil/PycharmProjects/DQN-ITSCwPD/env/custom_env/data/platoon/detectors_simplified.add.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <e1Detector id="D1" lane="gneE41_1" pos="770" freq="1960.00" file="e1Detector.xml"/>
+    <e1Detector id="D2" lane="gneE41_0" pos="770" freq="1960.00" file="e1Detector.xml"/>
+</additional>

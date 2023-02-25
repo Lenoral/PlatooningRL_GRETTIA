@@ -1,0 +1,39 @@
+<routes>
+	<vType id="vtypeauto" accel="2.5" decel="8" sigma="0.5" length="4"
+		   minGap="0" maxSpeed="36" color="1,0,0" probability="1"
+		   carFollowModel="CC" tauEngine="0.5" omegaN="0.2" xi="1" c1="0.5"
+		   lanesCount="4" ccAccel="1.5" ploegKp="0.2" ploegKd="0.7"
+		   ploegH="0.5" />
+	<vType id="passenger" accel="1.5" decel="4.5" sigma="0.5" length="4"
+		   minGap="0" maxSpeed="36.11" color="0.16,0.33,0.42" vClass="passenger"
+		   guiShape="passenger" speedFactor="1" departSpeed="max"
+		   carFollowModel="IDM" />
+	<vType id="passenger2" accel="1.5" decel="4.5" sigma="0.5" length="4"
+		   minGap="0" maxSpeed="20" color="0.16,0.33,0.42" vClass="passenger"
+		   guiShape="passenger" speedFactor="1" departSpeed="max"
+	       carFollowModel="IDM" />
+	<vType id="vtypehuman" accel="2.5" decel="6.0" sigma="0.5" length="4"
+		   minGap="0" maxSpeed="27.77778" color="0,0,1" probability="1" />
+    <route id="Mainline" edges="gneE0 gneE1 gneE2 gneE3 gneE4 gneE5 gneE6 gneE7 gneE8 gneE9"/>
+    <route id="Mainline_off0" edges="gneE0 gneOff0"/>
+    <route id="Mainline_off1" edges="gneE0 gneE1 gneE2 gneE3 gneOff1"/>
+    <route id="Mainline_off2" edges="gneE0 gneE1 gneE2 gneE3 gneE4 gneE5 gneE6 gneOff2"/>
+    <route id="On0_mainline" edges="gneOn0 gneE2 gneE3 gneE4 gneE5 gneE6 gneE7 gneE8 gneE9"/>
+    <route id="On1_mainline" edges="gneOn1 gneE5 gneE6 gneE7 gneE8 gneE9"/>
+    <route id="On2_mainline" edges="gneOn2 gneE8 gneE9"/>
+    
+    <flow id="cav_m" begin="0" end="3600" departPos="0" departSpeed="max" departLane="random" number="3000" type="vtypeauto" route="Mainline"/>
+    <flow id="cav_off0" begin="0" end="3600" departPos="0" departSpeed="max" departLane="random" number="300" type="vtypeauto" route="Mainline_off0"/>
+    <flow id="cav_off1" begin="0" end="3600" departPos="0" departSpeed="max" departLane="random" number="300" type="vtypeauto" route="Mainline_off1"/>
+    <flow id="cav_off2" begin="0" end="3600" departPos="0" departSpeed="max" departLane="random" number="300" type="vtypeauto" route="Mainline_off2"/>
+    <flow id="cav_on0" begin="0" end="3600" departPos="0" departSpeed="max" departLane="random" number="300" type="vtypeauto" route="On0_mainline"/>
+    <flow id="cav_on1" begin="0" end="3600" departPos="0" departSpeed="max" departLane="random" number="300" type="vtypeauto" route="On1_mainline"/>
+    <flow id="cav_on2" begin="0" end="3600" departPos="0" departSpeed="max" departLane="random" number="300" type="vtypeauto" route="On2_mainline"/>
+    <flow id="hv_m" begin="0" end="3600" departPos="0" departSpeed="max" departLane="random" number="1500" type="vtypehuman" route="Mainline"/>
+    <flow id="hv_off0" begin="0" end="3600" departPos="0" departSpeed="max" departLane="random" number="150" type="vtypehuman" route="Mainline_off0"/>
+    <flow id="hv_off1" begin="0" end="3600" departPos="0" departSpeed="max" departLane="random" number="150" type="vtypehuman" route="Mainline_off1"/>
+    <flow id="hv_off2" begin="0" end="3600" departPos="0" departSpeed="max" departLane="random" number="150" type="vtypehuman" route="Mainline_off2"/>
+    <flow id="hv_on0" begin="0" end="3600" departPos="0" departSpeed="max" departLane="random" number="150" type="vtypehuman" route="On0_mainline"/>
+    <flow id="hv_on1" begin="0" end="3600" departPos="0" departSpeed="max" departLane="random" number="150" type="vtypehuman" route="On1_mainline"/>
+    <flow id="hv_on2" begin="0" end="3600" departPos="0" departSpeed="max" departLane="random" number="150" type="vtypehuman" route="On2_mainline"/>
+</routes>

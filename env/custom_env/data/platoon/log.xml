@@ -1,0 +1,21 @@
+***Starting server on port 57425 ***
+Loading net-file from './env/custom_env/data/platoon/platoon.net.xml' ... done (5ms).
+Loading additional-files from './env/custom_env/data/platoon/freeway.rou.xml' ... done (0ms).
+Loading additional-files from './env/custom_env/data/platoon/detectors.add.xml' ... done (7ms).
+Loading additional-files from './env/custom_env/data/platoon/freeway.flow.xml' ... done (1ms).
+Loading done.
+Simulation version 1.4.0 started with time: 0.00
+Warning: Vehicle 'p_m.23'; collision with vehicle 'm0.20', lane='gneE3_2', gap=-0.05, time=110.90 stage=move.
+Warning: Vehicle 'p_m.23' skips stop on lane 'gneE3_2' time=111.00.
+Warning: Vehicle 'm0.20' skips stop on lane 'gneE3_2' time=111.00.
+Warning: Vehicle 'm0.37'; collision with vehicle 'm0.33', lane='gneE6_1', gap=-0.17, time=166.30 stage=move.
+Warning: Vehicle 'm0.33' skips stop on lane 'gneE6_1' time=166.40.
+Warning: Vehicle 'm0.37' skips stop on lane 'gneE6_1' time=166.40.
+Warning: Vehicle 'p_m.49'; collision with vehicle 'm0.66', lane='gneE4_2', gap=-0.98, time=182.30 stage=move.
+Warning: Vehicle 'p_m.49' skips stop on lane 'gneE4_2' time=182.40.
+Warning: Vehicle 'm0.66' skips stop on lane 'gneE4_2' time=182.40.
+Warning: Vehicle 'p_m.63'; collision with vehicle 'm0.99', lane='gneE1_2', gap=-0.45, time=189.10 stage=move.
+Warning: Vehicle 'p_m.63' skips stop on lane 'gneE1_2' time=189.20.
+Warning: Vehicle 'm0.99' skips stop on lane 'gneE1_2' time=189.20.
+Error: tcpip::Socket::recvAndCheck @ recv: Connection reset by peer
+Quitting (on error).

@@ -1,0 +1,11 @@
+<routes>
+	<vType accel="2.5" c1="0.5" carFollowModel="CC" ccAccel="1.5" color="1,0,0" decel="8" id="cav" lanesCount="3" lcCooperative="1" lcOvertakeRight="0" lcStrategic="20" length="4" maxSpeed="36" minGap="0" omegaN="0.2" ploegH="0.5" ploegKd="0.7" ploegKp="0.2" probability="0.5" sigma="0.2" speedFactor="1" tauEngine="0.5" xi="1" />
+	<vType accel="2.5" c1="0.5" carFollowModel="CC" ccAccel="1.5" color="1,0,0" decel="8" id="cav2" lanesCount="3" lcCooperative="1" lcStrategic="20" length="4" maxSpeed="36" minGap="0" omegaN="0.2" ploegH="0.5" ploegKd="0.7" ploegKp="0.2" probability="0.5" sigma="0.5" speedFactor="1" tauEngine="0.5" vClass="hov" xi="1" />
+	<vType accel="1.5" carFollowModel="IDM" color="0.16,0.33,0.42" decel="4.5" departSpeed="max" guiShape="passenger" id="passenger" lcCooperative="1" lcStrategic="10" length="4" maxSpeed="36" minGap="0" probability="0.5" sigma="0.5" speedFactor="1" vClass="passenger" />
+	<vType accel="1.5" carFollowModel="IDM" color="0.16,0.33,0.42" decel="4.5" departSpeed="max" guiShape="passenger" id="passenger2" length="4" maxSpeed="20" minGap="2.5" sigma="0.5" speedFactor="1" vClass="passenger" />
+	<vType accel="2.5" carFollowModel="IDM" color="0,0,1" decel="6.0" id="vtypehuman" lcCooperative="1" length="4" maxSpeed="27.77778" minGap="0" sigma="0.5" />
+	<vTypeDistribution id="vmix" vTypes="cav passenger" />
+	<vTypeDistribution id="vmix_ramp" vTypes="cav2 passenger" />
+    <route edges="gneInput gneE0 gneE1 gneE2 gneE3 gneE4 gneE5 gneE6 gneE7 gneE8 gneE9 gneE10 gneE11" id="m" />
+   
+</routes>
